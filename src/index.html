@@ -1,35 +1,8 @@
 <!DOCTYPE html>
-<body class="bg-gray-200">
-    <header class="p-20 bg-gradient-to-r from-red-400 via-red-500 to-pink-500 text-center">
-        <h1 class="hero-heading">Gulp with TailwindCSS Kit</h1>
-        <p class="w-full text-center text-white text-xl leading-5 mb-10">Updated with Tailwind 2.0, PostCss 8.0+</p>
-        <div class="py-15 flex justify-center space-x-6">
-            <a class="github-button" href="https://github.com/manjumjn" data-show-count="true" aria-label="Follow @manjumjn on GitHub">Follow @manjumjn</a>
-            <a class="github-button" href="https://github.com/manjumjn/gulp-with-tailwindcss" data-icon="octicon-star" data-show-count="true" aria-label="Star manjumjn/gulp-with-tailwindcss on GitHub">Star</a>
-            <a class="github-button" href="https://github.com/manjumjn/gulp-with-tailwindcss/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork manjumjn/gulp-with-tailwindcss on GitHub">Fork</a>
-            <a class="github-button" href="https://github.com/manjumjn/gulp-with-tailwindcss/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download manjumjn/gulp-with-tailwindcss on GitHub">Download</a>
-        </div>
-    </header>
-    <div class="mx-auto py-20 max-w-2xl">
-        <img class="shadow transition-shadow duration-500 rounded hover:shadow-lg mb-10" src="img/cover.jpg" alt="Gulp with TailwindCSS">
-        <div class="instructions">
-            <div class="mb-20 text-gray-700">
-                <h4 class="sub-title">Usage</h4>
-                <p>Use the following commands to get started.</p>
-                <code class="code transform translate-x-[20px]">
-                    <em>// To Install Dev Depedencies</em><br/>
-                    npm install<br/><br/>
-
-                    <em>// To start development and server for live preview</em><br/>
-                    npm run dev<br/><br/>
-
-                    <em>// To generate minifed,optamized files for production server</em><br/>
-                    npm run prod
-                </code>
-<html lang="pt-BR">
+<html id="inicio" lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, min-width=320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Casamento Jaque e Natan</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -38,57 +11,122 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
   </head>
+  <body class="relative bg-gray-100">
+    <!-- Navbar goes here -->
+    <nav class="fixed top-0 z-50 w-full h-14 bg-gray-200 shadow-lg lg:h-16 xl:h-20">
+      <div class="px-5 m-auto w-full h-14 md:px-20 lg:h-16 xl:h-20">
+        <div class="flex justify-between">
+          <div class="flex justify-between w-full">
+            <div class="py-2">
+              <!-- Website Logo -->
+              <a href="#" class="flex items-center p-2">
+                <img class="w-32 lg:w-48 xl:w-56" src="img/logo-lettering.svg" alt="Jaqueline e Natan">
+              </a>
             </div>
-
-            <div class="mb-10 text-gray-600">
-                    <h4 class="sub-title">Options</h4>
-                    <p>To change the path of files and destination/build folder configure at <b class="font-bold">config.js</b> file</p>
-                    <!-- Ignore the messay code :P only for demo -->
-<code class="code pre transform translate-x-[-20px]">config: {
-    ...
-    port: 9050 <em>//Update port here</em>
-},
-paths: {
-    root: "./",
-    src: {
-        base: "./src",
-        css: "./src/css",
-        js: "./src/js",
-        img: "./src/img"
-    },
-    dist: {
-        base: "./dist",
-        css: "./dist/css",
-        js: "./dist/js",
-        img: "./dist/img"
-    },
-    build: {
-        base: "./build",
-        css: "./build/css",
-        js: "./build/js",
-        img: "./build/img"
-    }
-}
-</code>
-                </div>
-
-        </div>
-
-        <div class="social">
-            <p class="w-full text-center">Want to connect with me?</p>
-            <div class="flex justify-center space-x-6">
-                <a href="https://manjumjn.com">Website</a>
-                <a href="https://www.facebook.com/manjumjn">Facebook</a>
-                <a href="https://twitter.com/manju_mjn">Twitter</a>
-                <a href="mailto:manjumjng2@gmail.com">Email Me</a>
+            <!-- Navbar items -->
+            <div class="hidden items-center space-x-4 lg:flex">
+              <a href="#inicio" class="py-2 px-2 text-red-700 border-b-4 border-red-800">INÍCIO</a>
+              <a href="#convite" class="py-2 px-2 text-red-900 transition duration-300 hover:text-red-700">CONVITE</a>
+              <a href="#galeria" class="py-2 px-2 text-red-900 transition duration-300 hover:text-red-700">GALERA</a>
+              <a href="#listas" class="py-2 px-2 text-red-900 transition duration-300 hover:text-red-700">LISTAS</a>
             </div>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="flex items-center lg:hidden">
+            <button class="rounded outline-none focus:ring mobile-menu-button">
+              <svg class="w-6 h-6 text-red-900 hover:text-red-700"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
         </div>
-    </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden text-red-900 bg-gray-200 mobile-menu">
+        <ul class="">
+          <li class="active"><a href="#inicio" class="block py-4 px-5 text-sm font-semibold bg-gray-300 md:px-20">INÍCIO</a></li>
+          <li><a href="#convite" class="block py-4 px-5 text-sm transition duration-300 hover:bg-gray-300 md:px-20">CONVITE</a></li>
+          <li><a href="#galeria" class="block py-4 px-5 text-sm transition duration-300 hover:bg-gray-300 md:px-20">GALERIA</a></li>
+          <li><a href="#listas" class="block py-4 px-5 text-sm transition duration-300 hover:bg-gray-300 md:px-20">LISTAS</a></li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
 
-    <script src="./js/scripts.js"></script>
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+    <div class="mt-14 w-full h-1 bg-gradient-to-r from-yellow-300 to-red-300 lg:mt-16 xl:mt-20"></div>
+    
+    <!-- header -->
+    <header class="relative text-center text-yellow-300 bg-red-900">
+      <img class="w-full md:w-2/3 md:ml-auto md:mr-0" src="img/header-photo.png" alt="Casal Jaqueline e Natan se beijando em estação de trem">
+      <div
+        class="relative z-10 pt-32 pb-12 m-auto -mt-24 bg-header
+        sm:-mt-32 sm:pt-40 sm:pb-24
+        md:mt-0 md:pt-8 md:pr-12 md:pb-16 md:h-full md:w-1/2 md:absolute md:top-0 md:flex md:flex-col md:justify-center"
+      >
+        <img
+          class="mx-auto mb-5 w-8 md:w-6 xl:w-10"
+          src="img/header-flower.svg"
+          alt="Ilustração de Flor"
+        />
+        <img class="mx-auto mb-5 max-w-xs sm:max-w-md md:w-64 lg:w-full lg:max-w-xs xl:max-w-lg" src="img/header-lettering.svg" alt="Jaqueline e Natan">
+        <p class="text-lg font-light lg:text-2xl">Faltam <span id="dia"></span> dias!</p>
+        <script>
+          var target_date = new Date("january 8, 2022").getTime();
+          var dias;
+          setInterval(function () {
+            var current_date = new Date().getTime();
+            var segundos_f = (target_date - current_date) / 1000;
 
-    <!-- Demo Purpose -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+            dias = parseInt(segundos_f / 86400);;
 
-</body>
+            document.getElementById('dia').innerHTML = dias;
+          }, 1000);
+        </script>
+      </div>
+    </header>
+    <div class="h-1 bg-gradient-to-r from-yellow-200 to-red-200"></div>
+
+    <!-- Convite section -->
+    <section id="convite" class="p-5 pb-16 text-center">
+      <blockquote class="mb-12 italic font-light text-center" cite="https://www.jw.org/pt/biblioteca/biblia/biblia-de-estudo/livros/1-Cor%C3%ADntios/13/">
+        O amor é paciente e bondoso. O amor não é ciumento. Não se gaba, não é orgulhoso, não se comporta indecentemente, não procura os seus próprios interesses, não se irrita com facilidade. Não leva em conta o dano. Não se alegra com a injustiça, mas se alegra com a verdade. Suporta todas as coisas, acredita em todas as coisas, espera todas as coisas, persevera em todas as coisas. O amor nunca acaba.
+        <br>
+        <em class="font-medium">1 Coríntios 13:4-8</em>
+      </blockquote>
+      <div class="font-medium">
+        <P>JOANA RAMOS</P>
+        <p>DULCINEIA AGUIAR DOS SANTOS</p>
+      </div>
+      <p class="my-8">CONVIDAM PARA <br>O CASAMENTO DE SEUS FILHOS</p>
+      <h1 class="mb-5 text-4xl lg:text6xl">Natan e Jaqueline</h1>
+      <p class="mb-5 font-medium">08 DE JANEIRO DE 2022, 13H30</p>
+      <p>ENDEREÇO</p>
+    </section>
+    <div class="h-1 bg-gradient-to-r from-yellow-200 to-red-200"></div>
+
+    <script>
+      // Grab HTML Elements
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      // Add Event Listeners
+      btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
