@@ -1,6 +1,7 @@
 //All styles can be added here.
-.hero-heading{
-    @apply text-4xl mb-10 text-white font-medium;
+html {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
 }
 
 .instructions{    
