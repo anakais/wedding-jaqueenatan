@@ -3,10 +3,31 @@ html {
     font-family: 'Montserrat', sans-serif;
     min-width: 320px;
     scroll-behavior: smooth;
+    background-color: lightgray;
+}
+
+html, nav  {
+    max-width: 1500px;
+    @apply mx-auto;
+}
+
+body {
+    background: antiquewhite url(../img/body-bg.png);
+}
+
+header {
+    min-height: 568px;
+    background-color: #54222f;
+    @media screen and (min-width: 768px) {
+        min-height: 398px;
+    }
+    @media screen and (min-width: 1024px) {
+        min-height: 530px;
+    }
 }
 
 a {
-    @apply outline-none rounded focus:ring;
+    @apply rounded outline-none focus:ring;
 }
 
 .bg-header {
