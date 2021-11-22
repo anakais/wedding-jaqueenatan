@@ -2,7 +2,10 @@
 html {
     font-family: 'Montserrat', sans-serif;
     min-width: 360px;
+    --scroll-behavior: smooth;
     scroll-behavior: smooth;
+    scroll-snap-type: y;
+    scroll-padding: 10px;
     background-color: lightgray;
 }
 
