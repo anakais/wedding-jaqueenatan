@@ -7,9 +7,12 @@
     <title>Casamento Jaque e Natan</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Splide -->
     <link
@@ -31,16 +34,25 @@
             </div>
             <!-- Navbar items -->
             <div class="hidden items-center space-x-4 lg:flex">
-              <a href="#inicio" class="py-2 px-2 text-red-700 border-b-4 border-red-800">INÍCIO</a>
-              <a href="#convite" class="py-2 px-2 text-red-900 transition duration-300 hover:text-red-700">CONVITE</a>
-              <a href="#galeria" class="py-2 px-2 text-red-900 transition duration-300 hover:text-red-700">GALERA</a>
-              <a href="#listas" class="py-2 px-2 text-red-900 transition duration-300 hover:text-red-700">LISTAS</a>
+              <a href="#inicio" class="py-2 px-2 text-red-700 border-b-4 border-red-800">
+                INÍCIO
+              </a>
+              <a href="#convite" class="py-2 px-2 text-red-900 transition duration-300 hover:text-red-700">
+                CONVITE
+              </a>
+              <a href="#galeria" class="py-2 px-2 text-red-900 transition duration-300 hover:text-red-700">
+                GALERA
+              </a>
+              <a href="#listas" class="py-2 px-2 text-red-900 transition duration-300 hover:text-red-700">
+                LISTAS
+              </a>
             </div>
           </div>
           <!-- Mobile menu button -->
           <div class="flex items-center lg:hidden">
             <button class="rounded outline-none focus:ring mobile-menu-button">
-              <svg class="w-6 h-6 text-red-900 hover:text-red-700"
+              <svg
+                class="w-6 h-6 text-red-900 hover:text-red-700"
                 x-show="!showMenu"
                 fill="none"
                 stroke-linecap="round"
@@ -58,49 +70,76 @@
       <!-- mobile menu -->
       <div class="hidden text-red-900 bg-gray-200 mobile-menu">
         <ul class="">
-          <li class="active"><a href="#inicio" class="block py-4 px-5 text-sm font-semibold bg-gray-300 md:px-20">INÍCIO</a></li>
-          <li><a href="#convite" class="block py-4 px-5 text-sm transition duration-300 hover:bg-gray-300 md:px-20">CONVITE</a></li>
-          <li><a href="#galeria" class="block py-4 px-5 text-sm transition duration-300 hover:bg-gray-300 md:px-20">GALERIA</a></li>
-          <li><a href="#listas" class="block py-4 px-5 text-sm transition duration-300 hover:bg-gray-300 md:px-20">LISTAS</a></li>
+          <li class="active">
+            <a href="#inicio" class="block py-4 px-5 text-sm font-semibold bg-gray-300 md:px-20">
+              INÍCIO
+            </a>
+          </li>
+          <li>
+            <a href="#convite" class="block py-4 px-5 text-sm transition duration-300 hover:bg-gray-300 md:px-20">
+              CONVITE
+            </a>
+          </li>
+          <li>
+            <a href="#galeria" class="block py-4 px-5 text-sm transition duration-300 hover:bg-gray-300 md:px-20">
+              GALERIA
+            </a>
+          </li>
+          <li>
+            <a href="#listas" class="block py-4 px-5 text-sm transition duration-300 hover:bg-gray-300 md:px-20">
+              LISTAS
+            </a>
+          </li>
         </ul>
       </div>
       <script>
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
+        const btn = document.querySelector('button.mobile-menu-button')
+        const menu = document.querySelector('.mobile-menu')
 
-        btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-        });
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden')
+        })
       </script>
     </nav>
     <div class="mt-14 w-full h-1 bg-gradient-to-r from-yellow-300 to-red-300 lg:mt-16 xl:mt-20"></div>
-    
+
     <!-- header -->
     <header class="relative text-center text-yellow-300">
-      <img class="w-full md:w-2/3 md:ml-auto md:mr-0" src="img/header-photo.png" alt="Casal Jaqueline e Natan se beijando em estação de trem">
+      <img
+        class="w-full md:w-2/3 md:ml-auto md:mr-0"
+        src="img/header-photo.png"
+        alt="Casal Jaqueline e Natan se beijando em estação de trem"
+      />
       <div
-        class="relative z-10 pt-32 pb-12 m-auto -mt-24 bg-header
-        sm:-mt-32 sm:pt-40 sm:pb-24
-        md:mt-0 md:pt-8 md:pr-12 md:pb-16 md:h-full md:w-1/2 md:absolute md:top-0 md:flex md:flex-col md:justify-center"
+        class="relative z-10 pt-32 pb-12 m-auto -mt-24 bg-header 
+          sm:-mt-32 sm:pt-40 sm:pb-24 
+          md:mt-0 md:pt-8 md:pr-12 md:pb-16 md:h-full md:w-1/2 md:absolute md:top-0 md:flex md:flex-col 
+          md:justify-center"
       >
         <img
           class="mx-auto mb-5 w-8 md:w-6 xl:w-10"
           src="img/header-flower.svg"
           alt="Ilustração de Flor"
         />
-        <img class="mx-auto mb-5 max-w-xs sm:max-w-md md:w-64 lg:w-full lg:max-w-xs xl:max-w-lg" src="img/header-lettering.svg" alt="Jaqueline e Natan">
-        <p class="text-lg font-light lg:text-2xl">Faltam <span id="dia"></span> dias!</p>
+        <img
+          class="mx-auto mb-5 max-w-xs sm:max-w-md md:w-64 lg:w-full lg:max-w-xs xl:max-w-lg"
+          src="img/header-lettering.svg"
+          alt="Jaqueline e Natan"
+        />
+        <p class="text-lg font-light lg:text-2xl">
+          Faltam <span id="dia"></span> dias!
+        </p>
         <script>
-          var target_date = new Date("january 8, 2022").getTime();
-          var dias;
+          var target_date = new Date('january 8, 2022').getTime()
+          var dias
           setInterval(function () {
-            var current_date = new Date().getTime();
-            var segundos_f = (target_date - current_date) / 1000;
+            var current_date = new Date().getTime()
+            var segundos_f = (target_date - current_date) / 1000
 
-            dias = parseInt(segundos_f / 86400);;
+            dias = parseInt(segundos_f / 86400)
 
-            document.getElementById('dia').innerHTML = dias;
-          }, 1000);
+            document.getElementById('dia').innerHTML = dias
+          }, 1000)
         </script>
       </div>
     </header>
@@ -109,52 +148,78 @@
     <!-- Convite section -->
     <section id="convite" class="overflow-hidden relative">
       <div class="py-20 px-5 mx-auto text-center md:max-w-3xl lg:max-w-4xl">
-        <blockquote class="mb-20 italic font-light text-center" cite="https://www.jw.org/pt/biblioteca/biblia/biblia-de-estudo/livros/1-Cor%C3%ADntios/13/">
-          O amor é paciente e bondoso. O amor não é ciumento. Não se gaba, não é orgulhoso, não se comporta indecentemente, não procura os seus próprios interesses, não se irrita com facilidade. Não leva em conta o dano. Não se alegra com a injustiça, mas se alegra com a verdade. Suporta todas as coisas, acredita em todas as coisas, espera todas as coisas, persevera em todas as coisas. O amor nunca acaba.
-          <br>
+        <blockquote
+          class="mb-20 italic font-light text-center"
+          cite="https://www.jw.org/pt/biblioteca/biblia/biblia-de-estudo/livros/1-Cor%C3%ADntios/13/"
+        >
+          O amor é paciente e bondoso. O amor não é ciumento. Não se gaba, não é
+          orgulhoso, não se comporta indecentemente, não procura os seus
+          próprios interesses, não se irrita com facilidade. Não leva em conta o
+          dano. Não se alegra com a injustiça, mas se alegra com a verdade.
+          Suporta todas as coisas, acredita em todas as coisas, espera todas as
+          coisas, persevera em todas as coisas. O amor nunca acaba.
+          <br />
           <em class="font-medium"><strong>1 Coríntios 13:4-8</strong></em>
         </blockquote>
         <div class="font-medium sm:flex sm:justify-between">
           <p class="text-center sm:w-56 lg:w-72">JOANA RAMOS</p>
           <p class="text-center sm:w-56 lg:w-72">DULCINEIA AGUIAR DOS SANTOS</p>
         </div>
-        <p class="my-12">CONVIDAM PARA <br class="md:hidden">O CASAMENTO DE SEUS FILHOS</p>
-        <img class="mx-auto mb-10 max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-2xl 2xl:max-w-3xl" src="img/lettering.svg" alt="Jaqueline e Natan">
-        <p class="mb-8 font-medium text-red-900">08 DE JANEIRO DE 2022, 13H30</p>
-        <p class="text-red-900">ENDEREÇO</p>
+        <p class="my-12">
+          CONVIDAM PARA <br class="md:hidden" />O CASAMENTO DE SEUS FILHOS
+        </p>
+        <img
+          class="mx-auto mb-10 max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-2xl 2xl:max-w-3xl"
+          src="img/lettering.svg"
+          alt="Jaqueline e Natan"
+        />
+        <p class="mb-8 font-medium text-red-900">
+          08 DE JANEIRO DE 2022, 13H30
+        </p>
+        <p class="mx-auto max-w-sm text-red-900 md:max-w-full">
+          A transmissão será via Zoom Meetings e o link será enviado próximo à
+          data. <br />
+          Contamos com a sua presença!
+        </p>
       </div>
-      <img class="absolute right-0 bottom-0 -mr-20 w-56 sm:-mr-12 md:mb-12 lg:-mb-12 lg:-mr-24 lg:w-72 xl:-mr-32 xl:-mb-32 xl:w-96" src="img/convite-bg-rosa.svg" alt="Ilustração de rosa no fundo">
+      <img
+        class="absolute right-0 bottom-0 -mr-20 w-56 
+        sm:-mr-12 
+        md:mb-12 lg:-mb-12 lg:-mr-24 lg:w-72 xl:-mr-32 xl:-mb-32 xl:w-96"
+        src="img/convite-bg-rosa.svg"
+        alt="Ilustração de rosa no fundo"
+      />
     </section>
 
-    <!-- Convite section -->
-    <section 
-      id="galeria" 
+    <!-- Galeria section -->
+    <section
+      id="galeria"
       class="overflow-hidden relative py-20 px-5 mx-auto max-w-screen-lg lg:px-12"
     >
-    <div id="main-slider" class="mb-2 splide">
-      <div class="splide__track">
-        <ul class="splide__list">
+      <div id="main-slider" class="mb-2 splide">
+        <div class="splide__track">
+          <ul class="splide__list">
             <li class="splide__slide">
-              <img src="img/gallery-1.jpeg" alt="">
+              <img src="img/gallery-1.jpeg" alt="" />
             </li>
             <li class="splide__slide">
-              <img src="img/gallery-2.jpeg" alt="">
+              <img src="img/gallery-2.jpeg" alt="" />
             </li>
             <li class="splide__slide">
-              <img src="img/gallery-3.jpeg" alt="">
+              <img src="img/gallery-3.jpeg" alt="" />
             </li>
             <li class="splide__slide">
-              <img src="img/gallery-4.jpeg" alt="">
+              <img src="img/gallery-4.jpeg" alt="" />
             </li>
             <li class="splide__slide">
-              <img src="img/gallery-5.jpeg" alt="">
+              <img src="img/gallery-5.jpeg" alt="" />
             </li>
             <li class="splide__slide">
-              <img src="img/gallery-6.jpeg" alt="">
+              <img src="img/gallery-6.jpeg" alt="" />
             </li>
-        </ul>
+          </ul>
+        </div>
       </div>
-    </div>
       <ul id="thumbnails" class="mx-auto max-w-screen-sm thumbnails">
         <li class="thumbnail">
           <img src="img/gallery-1.jpeg" alt="" />
@@ -180,50 +245,50 @@
 
     <script>
       // Grab HTML Elements
-      const btn = document.querySelector("button.mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
+      const btn = document.querySelector('button.mobile-menu-button')
+      const menu = document.querySelector('.mobile-menu')
 
       // Add Event Listeners
-      btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-      });
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden')
+      })
     </script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.1.7/dist/js/splide.min.js"
     ></script>
     <script>
-      var splide = new Splide( '#main-slider', {
-        pagination: false,
-      } );
+      var splide = new Splide('#main-slider', {
+        pagination: false
+      })
 
-      var thumbnails = document.getElementsByClassName( 'thumbnail' );
-      var current;
+      var thumbnails = document.getElementsByClassName('thumbnail')
+      var current
 
-      for ( var i = 0; i < thumbnails.length; i++ ) {
-        initThumbnail( thumbnails[ i ], i );
+      for (var i = 0; i < thumbnails.length; i++) {
+        initThumbnail(thumbnails[i], i)
       }
 
-      function initThumbnail( thumbnail, index ) {
-        thumbnail.addEventListener( 'click', function () {
-          splide.go( index );
-        } );
+      function initThumbnail(thumbnail, index) {
+        thumbnail.addEventListener('click', function () {
+          splide.go(index)
+        })
       }
 
-      splide.on("mounted move", function () {
-        var thumbnail = thumbnails[splide.index];
+      splide.on('mounted move', function () {
+        var thumbnail = thumbnails[splide.index]
 
         if (thumbnail) {
           if (current) {
-            current.classList.remove("is-active");
+            current.classList.remove('is-active')
           }
 
-          thumbnail.classList.add("is-active");
-          current = thumbnail;
+          thumbnail.classList.add('is-active')
+          current = thumbnail
         }
-      });
+      })
 
-      splide.mount();
+      splide.mount()
     </script>
   </body>
 </html>
