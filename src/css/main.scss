@@ -106,7 +106,7 @@ a {
 }
 
 .splide__slide img {
-  @apply mx-auto my-auto;
+  @apply my-auto mx-auto;
   max-height: 500px;
 }
 
@@ -116,18 +116,18 @@ a {
     }
 }
 
+/*! purgecss start ignore */
 .splide__arrow {
     @apply transition duration-300;
-    svg {
-        fill: #54222f !important;
-        @apply transition duration-300;
-    }
 }
-.splide__arrow:hover {
-    svg {
-        fill: #D99543 !important;
-    }
+.splide__arrow svg {
+    fill: #54222f !important;
+    @apply transition duration-300;
 }
+.splide__arrow:hover svg {
+    fill: #D99543 !important;
+}
+/*! purgecss end ignore */
 
 .thumbnails {
   display: flex;
