@@ -116,6 +116,18 @@ a {
     }
 }
 
+.splide__arrow {
+    @apply transition duration-300;
+    svg {
+        fill: #54222f !important;
+        @apply transition duration-300;
+    }
+}
+.splide__arrow:hover {
+    svg {
+        fill: #D99543 !important;
+    }
+}
 
 .thumbnails {
   display: flex;
