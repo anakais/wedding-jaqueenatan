@@ -13,14 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Splide -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.1.7/dist/css/themes/splide-skyblue.min.css"
-    />
   </head>
-  <body class="overflow-x-hidden relative text-gray-500 bg-gray-100">
+  <body class="overflow-x-hidden relative text-gray-500">
     <!-- Navbar goes here -->
     <nav class="fixed top-0 z-50 w-full h-14 bg-gray-200 shadow-lg lg:h-16 xl:h-20">
       <div class="px-5 m-auto w-full h-14 md:px-20 lg:h-16 xl:h-20">
@@ -87,11 +81,18 @@
 
     <!-- header -->
     <header class="relative mt-14 text-center text-red-100 lg:mt-16 xl:mt-20">
-      <img
-        class="w-full md:w-2/3 md:ml-auto md:mr-0"
-        src="img/header-photo.png"
-        alt="Casal Jaqueline e Natan se beijando em estação de trem"
-      />
+      <picture>
+        <!-- webp -->
+        <source srcset="img/header-photo-sm.webp" media="(max-width: 480px)" type="image/webp" />
+        <source srcset="img/header-photo.webp" type="image/webp" />
+        <!-- png -->
+        <source srcset="img/header-photo-sm.png" media="(max-width: 480px)" type="image/png" />
+        <img
+          class="w-full md:w-2/3 md:ml-auto md:mr-0"
+          src="img/header-photo.png"
+          alt="Casal Jaqueline e Natan se beijando em estação de trem"
+        />
+      </picture>
       <div
         class="relative z-10 pt-32 pb-12 m-auto -mt-24 bg-header 
           sm:-mt-32 sm:pt-40 sm:pb-24 
@@ -182,44 +183,140 @@
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
-              <img src="img/gallery-1.jpeg" alt="" />
+              <picture>
+                <!-- webp -->
+                <source srcset="img/galeria-1-sm.webp" media="(max-width: 480px)" type="image/webp" />
+                <source srcset="img/galeria-1.webp" media="(min-width: 481px)" type="image/webp" />
+                <!-- jpeg -->
+                <source srcset="img/galeria-1-sm.jpg" media="(max-width: 480px)" type="image/jpeg" />
+                <img
+                  src="img/galeria-1.jpeg"
+                  class=""
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="splide__slide">
-              <img src="img/gallery-2.jpeg" alt="" />
+              <picture>
+                <!-- webp -->
+                <source srcset="img/galeria-2-sm.webp" media="(max-width: 480px)" type="image/webp" />
+                <source srcset="img/galeria-2.webp" media="(min-width: 481px)" type="image/webp" />
+                <!-- jpeg -->
+                <source srcset="img/galeria-2-sm.jpeg" media="(max-width: 480px)" type="image/jpeg" />
+                <img
+                  src="img/galeria-2.jpg"
+                  class=""
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="splide__slide">
-              <img src="img/gallery-3.jpeg" alt="" />
+              <picture>
+                <!-- webp -->
+                <source srcset="img/galeria-3-sm.webp" media="(max-width: 480px)" type="image/webp" />
+                <source srcset="img/galeria-3.webp" media="(min-width: 481px)" type="image/webp" />
+                <!-- jpeg -->
+                <source srcset="img/galeria-3-sm.jpeg" media="(max-width: 480px)" type="image/jpeg" />
+                <img
+                  src="img/galeria-3.jpg"
+                  class=""
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="splide__slide">
-              <img src="img/gallery-4.jpeg" alt="" />
+              <picture>
+                <!-- webp -->
+                <source srcset="img/galeria-4-sm.webp" media="(max-width: 480px)" type="image/webp" />
+                <source srcset="img/galeria-4.webp" media="(min-width: 481px)" type="image/webp" />
+                <!-- jpeg -->
+                <source srcset="img/galeria-4-sm.jpeg" media="(max-width: 480px)" type="image/jpeg" />
+                <img
+                  src="img/galeria-4.jpg"
+                  class=""
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="splide__slide">
-              <img src="img/gallery-5.jpeg" alt="" />
+              <picture>
+                <!-- webp -->
+                <source srcset="img/galeria-5-sm.webp" media="(max-width: 480px)" type="image/webp" />
+                <source srcset="img/galeria-5.webp" media="(min-width: 481px)" type="image/webp" />
+                <!-- jpeg -->
+                <source srcset="img/galeria-5-sm.jpeg" media="(max-width: 480px)" type="image/jpeg" />
+                <img
+                  src="img/galeria-5.jpg"
+                  class=""
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="splide__slide">
-              <img src="img/gallery-6.jpeg" alt="" />
+              <picture>
+                <!-- webp -->
+                <source srcset="img/galeria-6-sm.webp" media="(max-width: 480px)" type="image/webp" />
+                <source srcset="img/galeria-6.webp" media="(min-width: 481px)" type="image/webp" />
+                <!-- jpeg -->
+                <source srcset="img/galeria-6-sm.jpeg" media="(max-width: 480px)" type="image/jpeg" />
+                <img
+                  src="img/galeria-6.jpg"
+                  class=""
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
             </li>
           </ul>
         </div>
       </div>
       <ul id="thumbnails" class="mx-auto max-w-screen-sm thumbnails">
         <li class="thumbnail">
-          <img src="img/gallery-1.jpeg" alt="" />
+          <picture>
+            <!-- webp -->
+            <source srcset="img/galeria-1-thumb.webp" type="image/webp" />
+            <img src="img/galeria-1-thumb.jpg" alt="" />
+          </picture>
         </li>
         <li class="thumbnail">
-          <img src="img/gallery-2.jpeg" alt="" />
+          <picture>
+            <!-- webp -->
+            <source srcset="img/galeria-2-thumb.webp" type="image/webp" />
+            <img src="img/galeria-2-thumb.jpg" alt="" />
+          </picture>
         </li>
         <li class="thumbnail">
-          <img src="img/gallery-3.jpeg" alt="" />
+          <picture>
+            <!-- webp -->
+            <source srcset="img/galeria-3-thumb.webp" type="image/webp" />
+            <img src="img/galeria-3-thumb.jpg" alt="" />
+          </picture>
         </li>
         <li class="thumbnail">
-          <img src="img/gallery-4.jpeg" alt="" />
+          <picture>
+            <!-- webp -->
+            <source srcset="img/galeria-4-thumb.webp" type="image/webp" />
+            <img src="img/galeria-4-thumb.jpg" alt="" />
+          </picture>
         </li>
         <li class="thumbnail">
-          <img src="img/gallery-5.jpeg" alt="" />
+          <picture>
+            <!-- webp -->
+            <source srcset="img/galeria-5-thumb.webp" type="image/webp" />
+            <img src="img/galeria-5-thumb.jpg" alt="" />
+          </picture>
         </li>
         <li class="thumbnail">
-          <img src="img/gallery-6.jpeg" alt="" />
+          <picture>
+            <!-- webp -->
+            <source srcset="img/galeria-6-thumb.webp" type="image/webp" />
+            <img src="img/galeria-6-thumb.jpg" alt="" />
+          </picture>
         </li>
       </ul>
     </section>
@@ -244,7 +341,19 @@
         <img class="mx-auto w-64 md:w-32 lg:w-2/3" src="img/listas-bg.svg" alt="Ilustração de rosa">
       </div>
       <div class="md:order-1 md:w-1/2 xl:w-2/5">
-        <img src="img/listas-img.jpg" alt="Casal Jaqueline e Natal trocando olhares e sorrisos" />
+        <picture>
+          <!-- webp -->
+          <source srcset="img/listas-img-sm.webp" media="(max-width: 480px)" type="image/webp" />
+          <source srcset="img/listas-img.webp" type="image/webp" />
+          <!-- png -->
+          <source srcset="img/listas-img-sm.png" media="(max-width: 480px)" type="image/png" />
+          <img
+            src="img/listas-img.jpeg"
+            class=""
+            alt="Casal Jaqueline e Natan trocando olhares e sorrisos na janela industrial"
+            loading="lazy"
+          />
+        </picture>
       </div>
     </section>
 
@@ -252,6 +361,12 @@
       <img class="mx-auto w-48 lg:w-72 xl:w-96" src="img/header-lettering.svg" alt="Lettering Jaqueline e Natan">
     </footer>
 
+
+    <!-- Splide -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.1.7/dist/css/themes/splide-skyblue.min.css"
+    />
     <script type="text/javascript">
       // Grab HTML Elements
       const btn = document.querySelector('button.mobile-menu-button')
@@ -274,7 +389,8 @@
     ></script>
     <script>
       var splide = new Splide('#main-slider', {
-        pagination: false
+        pagination: false,
+        rewind: true
       })
 
       var thumbnails = document.getElementsByClassName('thumbnail')

@@ -15,7 +15,8 @@ html, nav  {
 }
 
 body {
-    background: antiquewhite url(../img/body-bg.png);
+    background: #f4f2ee;
+    background-image: url(../img/body-bg.webp), url("../img/body-bg.png");
 }
 
 header {
@@ -34,19 +35,37 @@ a {
 }
 
 .bg-header {
-    background: url("../img/header-paper-mobile.png") no-repeat top left / cover;
+    background-image: url("../img/header-paper-mobile.webp"), url("../img/header-paper-mobile.png");
+    background-repeat: no-repeat;
+    background-position:  top left;
+    background-size: cover;
 }
 
 @media screen and (min-width: 768px){
     .bg-header{
-        background: url("../img/header-paper.png") no-repeat top left / cover;
+        background-image: url("../img/header-paper.webp"), url("../img/header-paper.png");
+        background-repeat: no-repeat;
+        background-position:  top left;
+        background-size: cover;
     }
 }
 
 /* ------- Splider ------- */
-.splide__slide img {
-  @apply mx-auto;
+.splide__slide picture {
+  @apply flex items-center h-full;
 }
+
+.splide__slide img {
+  @apply mx-auto my-auto;
+  max-height: 500px;
+}
+
+@media screen and (min-width: 1024px){
+    .splide__slide img {
+        max-height: 620px;
+    }
+}
+
 
 .thumbnails {
   display: flex;
@@ -56,8 +75,7 @@ a {
 }
 
 .thumbnail {
-  width: 70px;
-  height: 70px;
+  height: 60px;
   overflow: hidden;
   list-style: none;
   margin: 0 0.2rem;
