@@ -2,6 +2,9 @@
 
 Gulp with TailwindCSS Starter Kit ( Updated with [TailwindCSS JIT](https://github.com/tailwindlabs/tailwindcss-jit) )- A repo which makes your development easier with predefined gulp tasks that help you to use [tailwindcss](https://github.com/tailwindcss/tailwindcss) with simple npm commands 
 
+## To-do
+1. The `src/assets` folder isn't implemented on gulpfile.js yet, so you need to copy the folder after the build 
+
 ## Usage
 
 1. Install Dev Depedencies
