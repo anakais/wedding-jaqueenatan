@@ -61,7 +61,7 @@ html {
 
 html, nav  {
     max-width: 1500px;
-    @apply mx-auto;
+    @apply mx-auto leading-relaxed;
 }
 
 body {
@@ -143,6 +143,10 @@ a {
   margin: 0 0.2rem;
   cursor: pointer;
   opacity: 0.5;
+
+  @media screen and (min-width: 1024px){
+    height: 90px;
+  }
 }
 
 .thumbnail.is-active {

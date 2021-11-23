@@ -18,17 +18,17 @@
   <body id="inicio" class="overflow-x-hidden relative text-gray-500">
     <!-- Navbar goes here -->
     <nav class="fixed top-0 z-50 w-full h-14 bg-gray-200 shadow-lg lg:h-16 xl:h-20">
-      <div class="px-5 m-auto w-full h-14 md:px-20 lg:h-16 xl:h-20">
+      <div class="px-5 m-auto w-full h-14 md:px-24 lg:h-16 xl:h-20">
         <div class="flex justify-between">
           <div class="flex justify-between w-full">
             <div class="py-2">
               <!-- Website Logo -->
               <a href="#" class="flex items-center p-2">
-                <img class="w-32 lg:w-48 xl:w-56" src="img/lettering.svg" alt="Jaqueline e Natan">
+                <img class="w-32 lg:w-48 xl:w-56 xl:pr-2" src="img/lettering.svg" alt="Jaqueline e Natan">
               </a>
             </div>
             <!-- Navbar items -->
-            <div class="hidden items-center space-x-4 lg:flex">
+            <div class="hidden items-center space-x-6 lg:flex">
               <a href="#inicio" class="py-2 px-2 text-red-900 transition duration-300 hover:text-orange-800">
                 INÍCIO
               </a>
@@ -62,7 +62,7 @@
         </div>
       </div>
       <!-- Divisor -->
-      <div class="h-1 bg-gradient-to-r from-orange-500 via-yellow-200 to-orange-800"></div>
+      <div class="h-px bg-gradient-to-r from-orange-500 via-yellow-200 to-orange-800"></div>
       <!-- mobile menu -->
       <div class="hidden text-red-900 bg-gray-200 mobile-menu">
         <a href="#inicio" class="block py-4 px-5 text-sm transition duration-300 hover:bg-red-100 hover:text-orange-800 md:px-20">
@@ -101,16 +101,16 @@
           md:justify-center"
       >
         <img
-          class="mx-auto mb-5 w-8 md:w-6 xl:w-10"
+          class="mx-auto mt-3 mb-6 w-8 md:w-6 xl:w-12"
           src="img/header-flower.svg"
           alt="Ilustração de Flor"
         />
         <img
-          class="mx-auto mb-5 max-w-xs sm:max-w-md md:w-64 lg:w-full lg:max-w-xs xl:max-w-lg"
+          class="mx-auto mb-10 max-w-xs sm:max-w-md md:w-64 lg:w-full lg:max-w-xs xl:max-w-xl xl:px-6"
           src="img/header-lettering.svg"
           alt="Jaqueline e Natan"
         />
-        <p class="text-lg font-light text-red-100 lg:text-2xl">
+        <p class="text-lg font-light text-red-100 lg:text-2xl xl:text-3xl">
           Faltam <span id="dia"></span> dias!
         </p>
         <script>
@@ -149,15 +149,15 @@
           <p class="text-center sm:w-56 lg:w-72">JOANA RAMOS</p>
           <p class="text-center sm:w-56 lg:w-72">DULCINEIA AGUIAR DOS SANTOS</p>
         </div>
-        <p class="my-12">
+        <p class="mt-14 mb-10">
           CONVIDAM PARA <br class="md:hidden" />O CASAMENTO DE SEUS FILHOS
         </p>
         <img
-          class="mx-auto mb-10 max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-2xl 2xl:max-w-3xl"
+          class="mx-auto mb-8 max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-2xl xl:px-1"
           src="img/lettering.svg"
           alt="Jaqueline e Natan"
         />
-        <p class="mb-8 font-medium text-red-900">
+        <p class="mb-6 font-medium text-red-900 xl:text-lg">
           09 DE JANEIRO DE 2022 ÀS 11h30
         </p>
         <p class="mx-auto max-w-sm text-red-900 md:max-w-full">
@@ -178,96 +178,107 @@
     <!-- Galeria section -->
     <section
       id="galeria"
-      class="overflow-hidden relative py-20 px-5 mx-auto max-w-screen-lg lg:px-12"
+      class="overflow-hidden relative pt-20 pb-40 lg:pb-48"
     >
-      <div id="main-slider" class="mb-2 splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <picture>
-                <!-- webp -->
-                <source srcset="img/galeria-1-sm.webp" media="(max-width: 480px)" type="image/webp" />
-                <source srcset="img/galeria-1.webp" media="(min-width: 481px)" type="image/webp" />
-                <!-- jpeg -->
-                <source srcset="img/galeria-1-sm.jpg" media="(max-width: 480px)" type="image/jpeg" />
-                <img
-                  src="img/galeria-1.jpeg"
-                  alt="Casal de mãos dadas em estação de trem"
-                  loading="lazy"
-                />
-              </picture>
-            </li>
-            <li class="splide__slide">
-              <picture>
-                <!-- webp -->
-                <source srcset="img/galeria-2-sm.webp" media="(max-width: 480px)" type="image/webp" />
-                <source srcset="img/galeria-2.webp" media="(min-width: 481px)" type="image/webp" />
-                <!-- jpeg -->
-                <source srcset="img/galeria-2-sm.jpeg" media="(max-width: 480px)" type="image/jpeg" />
-                <img
-                  src="img/galeria-2.jpg"
-                  alt="Casal abraçado se apoiando em um vagão de trem"
-                  loading="lazy"
-                />
-              </picture>
-            </li>
-            <li class="splide__slide">
-              <picture>
-                <!-- webp -->
-                <source srcset="img/galeria-3-sm.webp" media="(max-width: 480px)" type="image/webp" />
-                <source srcset="img/galeria-3.webp" media="(min-width: 481px)" type="image/webp" />
-                <!-- jpeg -->
-                <source srcset="img/galeria-3-sm.jpeg" media="(max-width: 480px)" type="image/jpeg" />
-                <img
-                  src="img/galeria-3.jpg"
-                  alt="Casal de mãos dadas em frente à um vagão de trem antigo"
-                  loading="lazy"
-                />
-              </picture>
-            </li>
-            <li class="splide__slide">
-              <picture>
-                <!-- webp -->
-                <source srcset="img/galeria-4-sm.webp" media="(max-width: 480px)" type="image/webp" />
-                <source srcset="img/galeria-4.webp" media="(min-width: 481px)" type="image/webp" />
-                <!-- jpeg -->
-                <source srcset="img/galeria-4-sm.jpeg" media="(max-width: 480px)" type="image/jpeg" />
-                <img
-                  src="img/galeria-4.jpg"
-                  alt="Mãos dadas com trilho de trem e horizonte ao fundo"
-                  loading="lazy"
-                />
-              </picture>
-            </li>
-            <li class="splide__slide">
-              <picture>
-                <!-- webp -->
-                <source srcset="img/galeria-5-sm.webp" media="(max-width: 480px)" type="image/webp" />
-                <source srcset="img/galeria-5.webp" media="(min-width: 481px)" type="image/webp" />
-                <!-- jpeg -->
-                <source srcset="img/galeria-5-sm.jpeg" media="(max-width: 480px)" type="image/jpeg" />
-                <img
-                  src="img/galeria-5.jpg"
-                  alt="Casal abraçado em janela industrial de estação de trem"
-                  loading="lazy"
-                />
-              </picture>
-            </li>
-            <li class="splide__slide">
-              <picture>
-                <!-- webp -->
-                <source srcset="img/galeria-6-sm.webp" media="(max-width: 480px)" type="image/webp" />
-                <source srcset="img/galeria-6.webp" media="(min-width: 481px)" type="image/webp" />
-                <!-- jpeg -->
-                <source srcset="img/galeria-6-sm.jpeg" media="(max-width: 480px)" type="image/jpeg" />
-                <img
-                  src="img/galeria-6.jpg"
-                  alt="Casal de frente ao outro de mãos dadas na janela de estação de trem"
-                  loading="lazy"
-                />
-              </picture>
-            </li>
-          </ul>
+      <div class="relative px-5 mx-auto md:max-w-xl lg:px-12 lg:max-w-screen-md xl:max-w-screen-lg">
+        <img
+          class="absolute left-0 inset-y-0 -mt-24 -ml-12 w-1/2
+          sm:w-56
+          md:-ml-40 md:w-1/2 md:max-w-md
+          lg:-ml-56 lg:-mt-16 lg:max-w-xl
+          xl:-ml-96 xl:-mt-24 xl:w-4/5 xl:max-w-2xl xl:transform xl:-translate-x-24"
+          src="img/galeria-flower.svg"
+          alt="Ilustração de rosa no fundo"
+        />
+        <div id="main-slider" class="mb-2 splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <picture>
+                  <!-- webp -->
+                  <source srcset="img/galeria-1-sm.webp" media="(max-width: 480px)" type="image/webp"/>
+                  <source srcset="img/galeria-1.webp" media="(min-width: 481px)" type="image/webp"/>
+                  <!-- jpeg -->
+                  <source srcset="img/galeria-1-sm.jpg" media="(max-width: 480px)" type="image/jpeg"/>
+                  <img
+                    src="img/galeria-1.jpeg"
+                    alt="Casal de mãos dadas em estação de trem"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+              <li class="splide__slide">
+                <picture>
+                  <!-- webp -->
+                  <source srcset="img/galeria-2-sm.webp" media="(max-width: 480px)" type="image/webp"/>
+                  <source srcset="img/galeria-2.webp" media="(min-width: 481px)" type="image/webp"/>
+                  <!-- jpeg -->
+                  <source srcset="img/galeria-2-sm.jpeg" media="(max-width: 480px)" type="image/jpeg"/>
+                  <img
+                    src="img/galeria-2.jpg"
+                    alt="Casal abraçado se apoiando em um vagão de trem"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+              <li class="splide__slide">
+                <picture>
+                  <!-- webp -->
+                  <source srcset="img/galeria-3-sm.webp" media="(max-width: 480px)" type="image/webp"/>
+                  <source srcset="img/galeria-3.webp" media="(min-width: 481px)" type="image/webp"/>
+                  <!-- jpeg -->
+                  <source srcset="img/galeria-3-sm.jpeg" media="(max-width: 480px)" type="image/jpeg"/>
+                  <img
+                    src="img/galeria-3.jpg"
+                    alt="Casal de mãos dadas em frente à um vagão de trem antigo"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+              <li class="splide__slide">
+                <picture>
+                  <!-- webp -->
+                  <source srcset="img/galeria-4-sm.webp" media="(max-width: 480px)" type="image/webp"/>
+                  <source srcset="img/galeria-4.webp" media="(min-width: 481px)" type="image/webp"/>
+                  <!-- jpeg -->
+                  <source srcset="img/galeria-4-sm.jpeg" media="(max-width: 480px)" type="image/jpeg"/>
+                  <img
+                    src="img/galeria-4.jpg"
+                    alt="Mãos dadas com trilho de trem e horizonte ao fundo"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+              <li class="splide__slide">
+                <picture>
+                  <!-- webp -->
+                  <source srcset="img/galeria-5-sm.webp" media="(max-width: 480px)" type="image/webp"/>
+                  <source srcset="img/galeria-5.webp" media="(min-width: 481px)" type="image/webp"/>
+                  <!-- jpeg -->
+                  <source srcset="img/galeria-5-sm.jpeg" media="(max-width: 480px)" type="image/jpeg"/>
+                  <img
+                    src="img/galeria-5.jpg"
+                    alt="Casal abraçado em janela industrial de estação de trem"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+              <li class="splide__slide">
+                <picture>
+                  <!-- webp -->
+                  <source srcset="img/galeria-6-sm.webp" media="(max-width: 480px)" type="image/webp"/>
+                  <source srcset="img/galeria-6.webp" media="(min-width: 481px)" type="image/webp"/>
+                  <!-- jpeg -->
+                  <source srcset="img/galeria-6-sm.jpeg" media="(max-width: 480px)" type="image/jpeg"/>
+                  <img
+                    src="img/galeria-6.jpg"
+                    alt="Casal de frente ao outro de mãos dadas na janela de estação de trem"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <ul id="thumbnails" class="mx-auto max-w-screen-sm thumbnails">
@@ -323,12 +334,14 @@
         lg:px-12 lg:w-2/3 lg:flex lg:flex-col lg:justify-center lg:items-center
         xl:w-3/5"
       >
-        <p class="mx-auto mb-10 max-w-sm text-red-900 md:max-w-full lg:max-w-sm">
+        <p class="mx-auto mb-10 max-w-sm text-red-900 md:max-w-md lg:max-w-sm xl:max-w-lg xl:text-xl">
           Querido convidado, agradecemos sua contribuição nesse momento tão especial
         </p>
         <button 
           type="button"
-          class="py-4 px-24 mb-5 font-bold text-center text-red-900 bg-red-300 rounded-full transition duration-300 hover:bg-orange-500"
+          class="py-4 px-24 mb-5 font-bold text-center text-red-900 bg-red-300 rounded-full
+          xl:text-xl
+          transition duration-300 hover:bg-orange-500"
           onclick="window.open('http://finalfeliz.de/natan-jaqueline', '_blank')"
         >
           Ir para lista de presentes
@@ -352,7 +365,7 @@
       </div>
     </section>
 
-    <footer class="py-10 bg-red-900 lg:py-6">
+    <footer class="py-10 bg-red-900 lg:py-6 xl:py-10">
       <img class="mx-auto w-48 lg:w-72 xl:w-96" src="img/header-lettering.svg" alt="Lettering Jaqueline e Natan">
     </footer>
 
