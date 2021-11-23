@@ -1,6 +1,56 @@
-//All styles can be added here.
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-Light.woff2') format('woff2'),
+        url('../assets/Montserrat-Light.woff') format('woff'),
+        url('../assets/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-LightItalic.woff2') format('woff2'),
+        url('../assets/Montserrat-LightItalic.woff') format('woff'),
+        url('../assets/Montserrat-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-Bold.woff2') format('woff2'),
+        url('../assets/Montserrat-Bold.woff') format('woff'),
+        url('../assets/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-Medium.woff2') format('woff2'),
+        url('../assets/Montserrat-Medium.woff') format('woff'),
+        url('../assets/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-Regular.woff2') format('woff2'),
+        url('../assets/Montserrat-Regular.woff') format('woff'),
+        url('../assets/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*-------- All styles can be added here.--------*/
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', Roboto, Lato, sans-serif;
     min-width: 360px;
     --scroll-behavior: smooth;
     scroll-behavior: smooth;
